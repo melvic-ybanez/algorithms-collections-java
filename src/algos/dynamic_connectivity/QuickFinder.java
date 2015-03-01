@@ -1,5 +1,7 @@
 package algos.dynamic_connectivity;
 
+import algos.utils.Mapper;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -7,40 +9,23 @@ import java.util.List;
 /**
  * Created by ybamelcash on 3/1/2015.
  */
-public class QuickFinder<T extends Comparable<T>> implements UnionFinder<T> {
-    private List<T> xs;
-    private Comparator<T> comparator;
-    
-    public QuickFinder(List<T> xs, Comparator<T> comparator) {
-        this.xs = xs;
-        this.comparator = comparator;
-    }
-    
-    public QuickFinder(List<T> xs) {
-        this(xs, new Comparator<T>() {
-            @Override
-            public int compare(T o1, T o2) {
-                return o1.compareTo(o2);
-            }
-        });
+public class QuickFinder extends UnionFinder {
+    public QuickFinder(int n) {
+        super(n);
     }
     
     public boolean connected(int p, int q) {
-        return equalElements(xs.get(p), xs.get(q)); 
+        return ids[p] == ids[q];
     }
     
-    public List<T> union(int p, int q) {
-        T pElem = xs.get(p);
-        T qElem = xs.get(q);
-        for (int i = 0; i < xs.size(); i++) {
-            if (equalElements(xs.get(i), pElem)) {
-                xs.set(i, qElem);
+    public UnionFinder union(int p, int q) {
+        int pValue = ids[p];
+        int qValue = ids[q];
+        for (int i = 0; i < ids.length; i++) {
+            if (ids[i] == pValue) {
+                ids[i] = qValue;
             }
         }
-        return xs;
-    }
-
-    private boolean equalElements(T a, T b) {
-        return comparator.compare(a, b) == 0;
+        return this;
     }
 }
