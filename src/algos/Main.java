@@ -1,5 +1,7 @@
 package algos;
 
+import algos.dynamic_connectivity.QuickFinder;
+import algos.dynamic_connectivity.UnionFinder;
 import algos.sortings.MergeSorter;
 
 import java.util.ArrayList;
@@ -9,13 +11,18 @@ public class Main {
 
     public static void main(String[] args) {
         List<Integer> xs = new ArrayList<>();
-        int[] xsItems = { 5, 6, 2, 1, 4 };
-        for (int xsItem : xsItems) {
-            xs.add(xsItem);
+        for (int i = 0; i < 10; i++) {
+            xs.add(i);
         }
-        MergeSorter sorter = new MergeSorter(Integer.MAX_VALUE);
-        System.out.println(sorter.sort(xs));
-        System.out.println(sorter.sort(new ArrayList()));
+        UnionFinder<Integer> uf = new QuickFinder<>(xs);
+        System.out.println(uf.connected(2, 6));
+        System.out.println(uf.connected(4, 5));
+        uf.union(4, 5);
+        System.out.println(uf.connected(4, 5));
+        uf.union(2, 4);
+        System.out.println(uf.connected(2, 5));
+        uf.union(2, 6);
+        System.out.println(uf.connected(5, 6));
     }
 
     public <T> String listToString(List<T> xs) {
