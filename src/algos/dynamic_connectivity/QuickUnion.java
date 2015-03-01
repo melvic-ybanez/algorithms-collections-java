@@ -21,7 +21,7 @@ public class QuickUnion extends UnionFinder {
     @Override
     public UnionFinder union(int p, int q) {
         int pRoot = rootOf(p);
-        ids[pRoot] = q;
+        ids[pRoot] = rootOf(q);
         return this;
     }
 }

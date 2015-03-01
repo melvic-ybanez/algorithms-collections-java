@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91509c64-1513-4f22-855e-ba75161da05e" name="Default" comment="">
       <change type="DELETED" beforePath="D:\IdeaProjects\algorithms-collections-java\out\production\algorithms-collections-java\algos\dynamic_connectivity\QuickFinder$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/dynamic_connectivity/QuickFinder.class" afterPath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/dynamic_connectivity/QuickFinder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/dynamic_connectivity/UnionFinder.class" afterPath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/dynamic_connectivity/UnionFinder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/Main.java" afterPath="$PROJECT_DIR$/src/algos/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" afterPath="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/dynamic_connectivity/UnionFinder.java" afterPath="$PROJECT_DIR$/src/algos/dynamic_connectivity/UnionFinder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickUnion.java" afterPath="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickUnion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algorithms-collections-java.iws" />
@@ -94,8 +89,8 @@
       <file leaf-file-name="QuickUnion.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickUnion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40152964" vertical-offset="0" max-vertical-offset="523">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.5162524" vertical-offset="0" max-vertical-offset="523">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#158#159#0" expanded="true" />
                 <element signature="e#182#183#0" expanded="true" />
@@ -626,12 +621,12 @@
       <workItem from="1424705757118" duration="471000" />
       <workItem from="1425200366856" duration="2884000" />
       <workItem from="1425209926787" duration="4291000" />
-      <workItem from="1425214532256" duration="6111000" />
+      <workItem from="1425214532256" duration="6642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13757000" />
+    <option name="totallyTimeSpent" value="14288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -648,7 +643,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2908623" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2908623" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -902,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickUnion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40152964" vertical-offset="0" max-vertical-offset="523">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.5162524" vertical-offset="0" max-vertical-offset="523">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#158#159#0" expanded="true" />
             <element signature="e#182#183#0" expanded="true" />
