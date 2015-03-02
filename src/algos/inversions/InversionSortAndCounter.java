@@ -2,7 +2,7 @@ package algos.inversions;
 
 import algos.utils.Pair;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,7 +16,7 @@ public class InversionSortAndCounter<T extends Comparable<T>> extends InversionC
     
     private Pair<List<T>, Integer> sortAndCount(List<T> xs) {
         if (xs.size() <= 1) {
-            return new Pair<>(Collections.emptyList(), 0);
+            return new Pair<>(xs, 0);
         } 
         
         int half = xs.size() / 2;
@@ -28,6 +28,32 @@ public class InversionSortAndCounter<T extends Comparable<T>> extends InversionC
     }
     
     private Pair<List<T>, Integer> countSplitInversions(List<T> xs, List<T> ys) {
+        List<T> zs = new ArrayList<>();
+        int count = 0;
+        int i = 0;
+        int j = 0;
         
-    } 
+        while (true) {
+            T x = xs.get(i);
+            T y = ys.get(j);
+            if (!xs.isEmpty() && !ys.isEmpty()) {
+                if (lessThan(x, y)) {
+                    zs.add(x);
+                    i++;
+                } else {
+                    zs.add(y);
+                    count += xs.size() - i;
+                    j++;
+                }
+            } else if (!xs.isEmpty()) {
+                zs.add(x);
+                i++;
+            } else if (!ys.isEmpty()) {
+                zs.add(y);
+                j++;
+            } else break;
+        }
+        
+        return new Pair<>(zs, count);
+    }
 }
