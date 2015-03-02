@@ -34,10 +34,10 @@ public class InversionSortAndCounter<T extends Comparable<T>> extends InversionC
         int j = 0;
         
         while (true) {
-            T x = xs.get(i);
-            T y = ys.get(j);
-            if (!xs.isEmpty() && !ys.isEmpty()) {
-                if (lessThan(x, y)) {
+            if (i < xs.size() && j < ys.size()) {
+                T x = xs.get(i);
+                T y = ys.get(j);
+                if (lessThanOrEqualTo(x, y)) {
                     zs.add(x);
                     i++;
                 } else {
@@ -45,11 +45,11 @@ public class InversionSortAndCounter<T extends Comparable<T>> extends InversionC
                     count += xs.size() - i;
                     j++;
                 }
-            } else if (!xs.isEmpty()) {
-                zs.add(x);
+            } else if (i < xs.size()) {
+                zs.add(xs.get(i));
                 i++;
-            } else if (!ys.isEmpty()) {
-                zs.add(y);
+            } else if (j < ys.size()) {
+                zs.add(ys.get(j));
                 j++;
             } else break;
         }

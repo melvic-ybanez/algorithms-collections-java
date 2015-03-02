@@ -22,8 +22,8 @@ public abstract class InversionCounter<T extends Comparable<T>> {
         });
     }
     
-    protected boolean lessThan(T a, T b) {
-        return comparator.compare(a, b) < 0;
+    protected boolean lessThanOrEqualTo(T a, T b) {
+        return comparator.compare(a, b) <= 0;
     }
     
     public abstract int count(List<T> xs);

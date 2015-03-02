@@ -2,20 +2,18 @@ package algos;
 
 import algos.dynamic_connectivity.QuickUnion;
 import algos.dynamic_connectivity.UnionFinder;
+import algos.inversions.InversionCounter;
+import algos.inversions.InversionSortAndCounter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        UnionFinder uf = new QuickUnion(10);
-        System.out.println(uf.connected(2, 6));
-        System.out.println(uf.connected(4, 5));
-        uf.union(4, 5);
-        System.out.println(uf.connected(4, 5));
-        uf.union(2, 4).union(2, 6);
-        System.out.println(uf.connected(2, 5));
-        System.out.println(uf.connected(5, 6));
+        InversionCounter<Integer> counter = new InversionSortAndCounter<>();
+        System.out.println(counter.count(Arrays.asList(6, 5, 4, 3, 2, 1)));
     }
 
     public <T> String listToString(List<T> xs) {
