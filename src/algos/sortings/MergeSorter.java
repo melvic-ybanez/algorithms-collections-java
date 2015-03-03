@@ -7,21 +7,16 @@ import java.util.List;
 /**
  * Created by ybamelcash on 2/20/2015.
  */
-public class MergeSorter<T extends Comparable<T>> implements Sorter<T> {
-    private Comparator<T> comparator;
+public class MergeSorter<T extends Comparable<T>> extends Sorter<T> {
     private T sentinel;
 
     public MergeSorter(T sentinel) {
-        this(new Comparator<T>() {
-            @Override
-            public int compare(T o1, T o2) {
-                return o1.compareTo(o2);
-            }
-        }, sentinel);
+        super();
+        this.sentinel = sentinel;
     }
 
     public MergeSorter(Comparator<T> comparator, T sentinel) {
-        this.comparator = comparator;
+        super(comparator);
         this.sentinel = sentinel;
     }
 
@@ -46,7 +41,7 @@ public class MergeSorter<T extends Comparable<T>> implements Sorter<T> {
         for (int k = p; k <= r; k++) {
             T leftItem = left.get(i);
             T rightItem = right.get(j);
-            if (comparator.compare(leftItem, rightItem) <= 0) {
+            if (getComparator().compare(leftItem, rightItem) <= 0) {
                 xs.set(k, leftItem);
                 i++;
             } else {
@@ -57,6 +52,7 @@ public class MergeSorter<T extends Comparable<T>> implements Sorter<T> {
         return xs;
     }
     
+    @Override
     public List<T> sort(List<T> xs) {
         return mergeSort(xs, 0, xs.size() - 1);
     }
