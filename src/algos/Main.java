@@ -6,6 +6,7 @@ import algos.inversions.InversionCounter;
 import algos.inversions.InversionSortAndCounter;
 import algos.sortings.InsertionSorter;
 import algos.sortings.MergeSorter;
+import algos.sortings.QuickSorter;
 import algos.sortings.Sorter;
 
 import java.util.ArrayList;
@@ -20,8 +21,8 @@ public class Main {
         for (int x : xse) {
             xs.add(x);
         }
-        Sorter<Integer> sorter = new MergeSorter<>(Integer.MAX_VALUE);
-        System.out.println(listToString(sorter.sort(xs)));
+        QuickSorter<Integer> sorter = new QuickSorter<>();
+        System.out.println(listToString(sorter.partition(xs, 0, xs.size() - 1)));
     }
 
     public static <T> String listToString(List<T> xs) {
