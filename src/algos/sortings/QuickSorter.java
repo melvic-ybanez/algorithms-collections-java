@@ -1,5 +1,7 @@
 package algos.sortings;
 
+import algos.utils.Pair;
+
 import java.util.Comparator;
 import java.util.List;
 
@@ -17,11 +19,18 @@ public class QuickSorter<T extends Comparable<T>> extends Sorter<T> {
     
     @Override
     public List<T> sort(List<T> xs) {
-        return null;
+        return quickSort(xs, 0, xs.size());
     }
     
-    public List<T> partition(List<T> xs, int l, int r) {
-        if (r - l <= 1 || xs.size() <= l) return xs;
+    private List<T> quickSort(List<T> xs, int l, int r) {
+        if (xs.size() <= 1 || r - l <= 1) return xs;
+        int i = partition(xs, l, r);
+        quickSort(xs, l, i - 2);
+        quickSort(xs, i, r);
+        return xs;
+    }
+    
+    private int partition(List<T> xs, int l, int r) {
         T pivot = xs.get(l);
         int i = l + 1;
         for (int j = l + 1; j < r; j++) {
@@ -31,13 +40,12 @@ public class QuickSorter<T extends Comparable<T>> extends Sorter<T> {
             }
         }
         swap(xs, l, i - 1);
-        return xs;
+        return i;
     }
     
-    private List<T> swap(List<T> xs, int a, int b) {
+    private void swap(List<T> xs, int a, int b) {
         T temp = xs.get(a);
         xs.set(a, xs.get(b));
         xs.set(b, temp);
-        return xs;
     }
 }

@@ -21,8 +21,8 @@ public class Main {
         for (int x : xse) {
             xs.add(x);
         }
-        QuickSorter<Integer> sorter = new QuickSorter<>();
-        System.out.println(listToString(sorter.partition(xs, 0, xs.size() - 1)));
+        Sorter<Integer> sorter = new QuickSorter<>();
+        System.out.println(listToString(sorter.sort(xs)));
     }
 
     public static <T> String listToString(List<T> xs) {
