@@ -1,6 +1,7 @@
 package algos.sortings;
 
 import algos.utils.Pair;
+import algos.utils.Utils;
 
 import java.util.Comparator;
 import java.util.List;
@@ -34,18 +35,12 @@ public class QuickSorter<T extends Comparable<T>> extends Sorter<T> {
         T pivot = xs.get(l);
         int i = l + 1;
         for (int j = l + 1; j < r; j++) {
-            if (getComparator().compare(xs.get(j), pivot) <= 0) {
-                swap(xs, j, i);
+            if (getComparator().compare(xs.get(j), pivot) < 0) {
+                Utils.swap(xs, j, i);
                 i++;
             }
         }
-        swap(xs, l, i - 1);
+        Utils.swap(xs, l, i - 1);
         return i;
-    }
-    
-    private void swap(List<T> xs, int a, int b) {
-        T temp = xs.get(a);
-        xs.set(a, xs.get(b));
-        xs.set(b, temp);
     }
 }
