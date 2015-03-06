@@ -6,10 +6,8 @@ package algos.data_structures.lists;
 public class List<T> {
     private T item;
     private List<T> next;
-    private int size;
     
     public List(T item, List<T> next) {
-        this.size = 1;
         reset(item, next);
     }
     
@@ -17,9 +15,7 @@ public class List<T> {
         this(item, null);
     }
     
-    public List() {
-        this.size = 0;
-    }
+    public List() {}
     
     public List<T> search(T item) {
         if (isEmpty()) return null;
@@ -33,7 +29,6 @@ public class List<T> {
     public List<T> insert(T item) {
         if (isEmpty()) {
             reset(item, null);
-            size++;
         } else {
             reset(item, new List<>(getItem(), getNext()));
         }
@@ -49,9 +44,8 @@ public class List<T> {
     public boolean delete(T item) {
         List<T> node = search(item);
         if (node == null) return false;
-        List<T> pred = predecessor(item);
-        size--;
         
+        List<T> pred = predecessor(item);
         if (pred == null) {  // delete head
             if (hasNext()) {
                 reset(getNext().getItem(), getNext().getNext());
@@ -67,9 +61,6 @@ public class List<T> {
     
     public void setNext(List<T> next) {
         this.next = next;
-        if (next != null) {
-            size = 1 + getNext().getSize();
-        }
     }
     
     private void setItem(T item) {
@@ -89,11 +80,13 @@ public class List<T> {
     }
     
     public int getSize() {
-        return size;
+        if (isEmpty()) return 0;
+        if (!hasNext()) return 1;
+        return 1 + getNext().getSize();
     }
     
     public boolean isEmpty() {
-        return getSize() == 0;
+        return getItem() == null && !hasNext();
     }
     
     public void clear() {

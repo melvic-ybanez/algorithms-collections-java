@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<Integer> xs = new List<>();
-        //xs.insert(1).insert(2).insert(3);
+        xs.insert(1).insert(2).insert(3);
         System.out.println(xs.getSize());
         System.out.println(xs);
         System.out.println(xs.delete(3));

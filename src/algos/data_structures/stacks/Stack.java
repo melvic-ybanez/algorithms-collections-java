@@ -8,30 +8,40 @@ import algos.utils.Pair;
 public class Stack<E> {
     private E head;
     private Stack<E> tail;
-    private int size;
     
     public Stack(E head, Stack<E> tail) {
-        this.head = head;
-        this.size = 1;
-        setTail(tail);
+        reset(head, tail);
     }
     
     public Stack(E head) {
         this(head, null);
     } 
     
-    public Stack() {
-        this.size = 0;
-    }
+    public Stack() {}
     
     public Stack<E> push(E head) {
-        if (isEmpty()) return new Stack<>(head);
-        return new Stack<>(head, this);
+        if (isEmpty()) {
+            reset(head, null);
+        } else {
+            reset(head, new Stack<>(getHead(), getTail().getTail()));
+        }
+        return this;
     }
     
-    public Pair<E, Stack<E>> pop() {
-       // if (isEmpty()) return new Pair<>
-        return new Pair<>(head, getTail());
+    public E pop() {
+        if (isEmpty()) return null;
+        
+        E head = getHead();
+        if (hasTail()) {
+            reset(getTail().getHead(), getTail().getTail());
+        } else {
+            reset(null, null);
+        }
+        return head;
+    }
+    
+    public E getHead() {
+        return head;
     }
     
     public Stack<E> getTail() {
@@ -39,11 +49,26 @@ public class Stack<E> {
     }
     
     public int getSize() {
-        return size;
+        if (isEmpty()) return 0;
+        if (!hasTail()) return 1;
+        return 1 + getTail().getSize();
+    }
+    
+    private void setHead(E head) {
+        this.head = head;
+    }
+    
+    private void reset(E head, Stack<E> tail) {
+        setHead(head);
+        setTail(tail);
     }
     
     public boolean isEmpty() {
-        return getSize() == 0;
+        return getHead() == null && !hasTail();
+    }
+    
+    public boolean hasTail() {
+        return getTail() != null;
     }
     
     public void setTail(Stack<E> tail) {
