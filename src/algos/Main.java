@@ -1,6 +1,6 @@
 package algos;
 
-import algos.data_structures.list.List;
+import algos.data_structures.lists.List;
 import algos.utils.Pair;
 
 public class Main {

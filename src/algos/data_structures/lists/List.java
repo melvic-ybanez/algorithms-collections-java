@@ -1,4 +1,4 @@
-package algos.data_structures.list;
+package algos.data_structures.lists;
 
 import algos.utils.Pair;
 
@@ -8,15 +8,20 @@ import algos.utils.Pair;
 public class List<T> {
     private T item;
     private List<T> next;
-    private int size = 1;
+    private int size;
     
     public List(T item, List<T> next) {
         this.item = item;
+        this.size = 1;
         setNext(next);
     }
     
     public List(T item) {
         this(item, null);
+    }
+    
+    public List() {
+        this.size = 0;
     }
     
     public List<T> search(T item) {
@@ -73,6 +78,10 @@ public class List<T> {
     
     public int getSize() {
         return size;
+    }
+    
+    public boolean isEmpty() {
+        return getSize() == 0;
     }
     
     @Override
