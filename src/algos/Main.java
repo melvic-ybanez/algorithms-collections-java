@@ -1,23 +1,21 @@
 package algos;
 
-import algos.dynamic_connectivity.QuickUnion;
-import algos.dynamic_connectivity.UnionFinder;
-import algos.inversions.InversionCounter;
-import algos.inversions.InversionSortAndCounter;
-import algos.sortings.*;
-import algos.strings.PatternMatcher;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import algos.data_structures.list.List;
+import algos.utils.Pair;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(PatternMatcher.find("ab", "abbas"));
+        List<Integer> xs = new List<>(1).insert(2).insert(3);
+        System.out.println(xs);
+        System.out.println(xs.search(5));
+        System.out.println(xs.search(3));
+        Pair<Boolean, List<Integer>> result = xs.delete(3);
+        System.out.println(result.getFirst());
+        System.out.println(result.getSecond());
     }
 
-    public static <T> String listToString(List<T> xs) {
+    public static <T> String listToString(java.util.List<T> xs) {
         StringBuilder bd = new StringBuilder("");
         for (T x : xs) {
             bd.append(x + " ");
