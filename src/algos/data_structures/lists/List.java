@@ -1,7 +1,5 @@
 package algos.data_structures.lists;
 
-import algos.utils.Pair;
-
 /**
  * Created by ybamelcash on 3/6/2015.
  */
@@ -11,9 +9,8 @@ public class List<T> {
     private int size;
     
     public List(T item, List<T> next) {
-        this.item = item;
         this.size = 1;
-        setNext(next);
+        reset(item, next);
     }
     
     public List(T item) {
@@ -25,6 +22,7 @@ public class List<T> {
     }
     
     public List<T> search(T item) {
+        if (isEmpty()) return null;
         if (this.item.equals(item)) {
             return this;    
         }
@@ -33,7 +31,13 @@ public class List<T> {
     }
     
     public List<T> insert(T item) {
-        return new List<>(item, this);
+        if (isEmpty()) {
+            reset(item, null);
+            size++;
+        } else {
+            reset(item, new List<>(getItem(), getNext()));
+        }
+        return this;
     }
     
     public List<T> predecessor(T item) {
@@ -42,27 +46,34 @@ public class List<T> {
         return getNext().predecessor(item);
     }
     
-    public Pair<Boolean, List<T>> delete(T item) {
+    public boolean delete(T item) {
         List<T> node = search(item);
-        if (node == null) return new Pair<>(false, this);
+        if (node == null) return false;
         List<T> pred = predecessor(item);
         size--;
-        Pair<Boolean, List<T>> result = new Pair<>(true, this);
         
-        if (pred == null) {
-            result = result.withSecond(getNext());
+        if (pred == null) {  // delete head
+            if (hasNext()) {
+                reset(getNext().getItem(), getNext().getNext());
+            } else {
+                clear();
+            }
         } else {
             pred.setNext(node.getNext());
         }
         
-        return result;
+        return true;
     }
     
     public void setNext(List<T> next) {
         this.next = next;
         if (next != null) {
-            size += getNext().getSize();
+            size = 1 + getNext().getSize();
         }
+    }
+    
+    private void setItem(T item) {
+        this.item = item;
     }
     
     public T getItem() {
@@ -85,6 +96,15 @@ public class List<T> {
         return getSize() == 0;
     }
     
+    public void clear() {
+        reset(null, null);
+    }
+    
+    private void reset(T item, List<T> next) {
+        setItem(item);
+        setNext(next);
+    }
+    
     @Override
     public boolean equals(Object obj) {
         if (obj == null) return false;
@@ -99,6 +119,7 @@ public class List<T> {
     
     @Override
     public String toString() {
+        if (isEmpty()) return " ";
         String itemString = getItem().toString();
         if (hasNext()) 
             return itemString + " " + getNext();

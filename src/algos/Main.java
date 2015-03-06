@@ -6,14 +6,12 @@ import algos.utils.Pair;
 public class Main {
 
     public static void main(String[] args) {
-        List<Integer> xs = new List<>(1).insert(2).insert(3);
-        System.out.println(xs);
+        List<Integer> xs = new List<>();
+        //xs.insert(1).insert(2).insert(3);
         System.out.println(xs.getSize());
-        System.out.println(xs.search(5));
-        System.out.println(xs.search(3));
-        Pair<Boolean, List<Integer>> result = xs.delete(3);
-        System.out.println(result.getFirst());
-        System.out.println(result.getSecond());
+        System.out.println(xs);
+        System.out.println(xs.delete(3));
+        System.out.println(xs);
         System.out.println(xs.getSize());
     }
 
