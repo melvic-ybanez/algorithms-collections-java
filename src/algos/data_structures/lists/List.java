@@ -46,6 +46,7 @@ public class List<T> {
         List<T> node = search(item);
         if (node == null) return new Pair<>(false, this);
         List<T> pred = predecessor(item);
+        size--;
         Pair<Boolean, List<T>> result = new Pair<>(true, this);
         
         if (pred == null) {
