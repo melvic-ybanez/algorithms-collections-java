@@ -23,7 +23,7 @@ public class Stack<E> {
         if (isEmpty()) {
             reset(head, null);
         } else {
-            reset(head, new Stack<>(getHead(), getTail().getTail()));
+            reset(head, new Stack<>(getHead(), getTail()));
         }
         return this;
     }
@@ -73,5 +73,26 @@ public class Stack<E> {
     
     public void setTail(Stack<E> tail) {
         this.tail = tail;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
+        Stack<E> that = (Stack<E>) obj;
+        boolean equalHeads = this.getHead().equals(that.getHead());
+        if (hasTail()) {
+            boolean equalTails = getTail().equals(that.getTail());
+            return equalHeads && equalTails;
+        }
+        return equalHeads && !that.hasTail();
+    }
+
+    @Override
+    public String toString() {
+        if (isEmpty()) return " ";
+        String itemString = getHead().toString();
+        if (hasTail())
+            return itemString + " " + getTail();
+        return itemString;
     }
 }

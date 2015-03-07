@@ -1,16 +1,20 @@
 package algos;
 
 import algos.data_structures.lists.List;
+import algos.data_structures.stacks.Stack;
 import algos.utils.Pair;
 
 public class Main {
 
     public static void main(String[] args) {
-        List<Integer> xs = new List<>();
-        xs.insert(1).insert(2).insert(3);
+        Stack<Integer> xs = new Stack<>();
+        xs.push(1).push(2).push(3);
         System.out.println(xs.getSize());
         System.out.println(xs);
-        System.out.println(xs.delete(3));
+        System.out.println(xs.pop());
+        System.out.println(xs.pop());
+        System.out.println(xs.pop());
+        System.out.println(xs.pop());
         System.out.println(xs);
         System.out.println(xs.getSize());
     }
