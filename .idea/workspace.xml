@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91509c64-1513-4f22-855e-ba75161da05e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" afterPath="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" afterPath="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" />
     </list>
     <ignored path="algorithms-collections-java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,18 +49,18 @@
       <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/data_structures/lists/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1725">
-              <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1680">
+              <caret line="121" column="55" selection-start-line="121" selection-start-column="55" selection-end-line="121" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79923517" vertical-offset="752" max-vertical-offset="1335">
-              <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1335">
+              <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1425">
-              <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.6309751" vertical-offset="900" max-vertical-offset="1425">
+              <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -215,11 +215,11 @@
         <option value="$PROJECT_DIR$/src/algos/data_structures/list/List.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/lists/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/algos/Main.java" />
-        <option value="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" />
         <option value="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java" />
         <option value="$PROJECT_DIR$/src/algos/tests/QueueTest.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
+        <option value="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" />
       </list>
     </option>
   </component>
@@ -551,7 +551,7 @@
     <property name="options.lastSelected" value="Errors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/tests/QueueTest.java&#10;sta&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/data_structures/stacks/Stack.java&#10;stack&#9;PSI&#9;JAVA://algos.data_structures.stacks.Stack&#10;ma&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/Main.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/data_structures/queues/Queue.java&#10;sta&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/data_structures/stacks/Stack.java&#10;stack&#9;PSI&#9;JAVA://algos.data_structures.stacks.Stack&#10;ma&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/Main.java" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
@@ -930,12 +930,12 @@
       <workItem from="1425655837676" duration="5843000" />
       <workItem from="1425719709387" duration="6069000" />
       <workItem from="1425737246731" duration="6605000" />
-      <workItem from="1425789170412" duration="14032000" />
+      <workItem from="1425789170412" duration="14187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78041000" />
+    <option name="totallyTimeSpent" value="78196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -1430,26 +1430,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/data_structures/lists/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1725">
-          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1425">
-          <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -1498,13 +1482,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/data_structures/lists/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1680">
+          <caret line="121" column="55" selection-start-line="121" selection-start-column="55" selection-end-line="121" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79923517" vertical-offset="752" max-vertical-offset="1335">
-          <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1335">
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6309751" vertical-offset="900" max-vertical-offset="1425">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

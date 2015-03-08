@@ -1,5 +1,7 @@
 package algos.data_structures.lists;
 
+import java.util.Objects;
+
 /**
  * Created by ybamelcash on 3/6/2015.
  */
@@ -108,20 +110,15 @@ public class List<T> {
     public boolean equals(Object obj) {
         if (obj == null) return false;
         List<T> that = (List<T>) obj;
-        boolean itemsEqual =  this.getItem().equals(that.getItem());
-        if (hasNext()) {
-            boolean equalNexts = getNext().equals(that.getNext());
-            return itemsEqual && equalNexts;
-        } 
-        return itemsEqual && !that.hasNext(); 
+        boolean equalItems = Objects.equals(this.getItem(), that.getItem());
+        boolean equalNexts = Objects.equals(this.getNext(), that.getNext());
+        return equalItems && equalNexts;
     }
     
     @Override
     public String toString() {
-        if (isEmpty()) return " ";
-        String itemString = getItem().toString();
-        if (hasNext()) 
-            return itemString + " " + getNext();
-        return itemString;
+        if (isEmpty()) return "";
+        return (Objects.toString(getItem(), "") + " " +
+                Objects.toString(getNext(), "")).trim();
     }
 }
