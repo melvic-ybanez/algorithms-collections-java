@@ -2,6 +2,8 @@ package algos.data_structures.stacks;
 
 import algos.utils.Pair;
 
+import java.util.Objects;
+
 /**
  * Created by ybamelcash on 3/6/2015.
  */
@@ -83,20 +85,15 @@ public class Stack<E> {
     public boolean equals(Object obj) {
         if (obj == null) return false;
         Stack<E> that = (Stack<E>) obj;
-        boolean equalHeads = this.getHead().equals(that.getHead());
-        if (hasTail()) {
-            boolean equalTails = getTail().equals(that.getTail());
-            return equalHeads && equalTails;
-        }
-        return equalHeads && !that.hasTail();
+        boolean equalHeads = Objects.equals(this.getHead(), that.getHead());
+        boolean equalTails = Objects.equals(this.getTail(), that.getTail());
+        return equalHeads && equalTails;
     }
 
     @Override
     public String toString() {
-        if (isEmpty()) return " ";
-        String itemString = getHead().toString();
-        if (hasTail())
-            return itemString + " " + getTail();
-        return itemString;
+        if (isEmpty()) return "";
+        return (Objects.toString(getHead(), "") + " " + 
+                Objects.toString(getTail(), "")).trim();
     }
 }

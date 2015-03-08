@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91509c64-1513-4f22-855e-ba75161da05e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java" afterPath="$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/tests/QueueTest.java" afterPath="$PROJECT_DIR$/src/algos/tests/QueueTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" afterPath="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
     </list>
     <ignored path="algorithms-collections-java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,12 +56,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1380">
-              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="90" selection-end-column="45" />
-              <folding />
+            <state vertical-scroll-proportion="0.79923517" vertical-offset="752" max-vertical-offset="1335">
+              <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueueTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/tests/QueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.9043975" vertical-offset="0" max-vertical-offset="2655">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2132" max-vertical-offset="2655">
               <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -214,11 +215,11 @@
         <option value="$PROJECT_DIR$/src/algos/data_structures/list/List.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/lists/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/algos/Main.java" />
-        <option value="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" />
         <option value="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java" />
         <option value="$PROJECT_DIR$/src/algos/tests/QueueTest.java" />
+        <option value="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
       </list>
     </option>
   </component>
@@ -929,12 +930,12 @@
       <workItem from="1425655837676" duration="5843000" />
       <workItem from="1425719709387" duration="6069000" />
       <workItem from="1425737246731" duration="6605000" />
-      <workItem from="1425789170412" duration="13881000" />
+      <workItem from="1425789170412" duration="14032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77890000" />
+    <option name="totallyTimeSpent" value="78041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -951,7 +952,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2908623" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2908623" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1445,14 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1380">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="90" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1425">
@@ -1463,7 +1456,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/tests/QueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.9043975" vertical-offset="0" max-vertical-offset="2655">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2132" max-vertical-offset="2655">
           <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1501,6 +1494,16 @@
             <element signature="e#4226#4227#0" expanded="true" />
             <element signature="e#4291#4292#0" expanded="true" />
             <element signature="e#4364#4365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79923517" vertical-offset="752" max-vertical-offset="1335">
+          <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
