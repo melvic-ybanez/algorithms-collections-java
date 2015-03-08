@@ -1,4 +1,4 @@
-package algos.trees;
+package algos.data_structures.trees;
 
 import java.util.Comparator;
 import java.util.Objects;
