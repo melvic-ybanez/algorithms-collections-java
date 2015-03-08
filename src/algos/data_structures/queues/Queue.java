@@ -48,6 +48,11 @@ public class Queue<E> {
         return head;
     }
     
+    public int getSize() {
+        if (isEmpty()) return 0;
+        return 1 + (hasTail()? getTail().getSize() : 0);
+    }
+    
     private void reset(E head, Queue<E> tail, Queue<E> last) {
         setHead(head);
         setTail(tail);
