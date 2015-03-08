@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91509c64-1513-4f22-855e-ba75161da05e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/data_structures/lists/List.class" afterPath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/data_structures/lists/List.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/data_structures/stacks/Stack.class" afterPath="$PROJECT_DIR$/out/production/algorithms-collections-java/algos/data_structures/stacks/Stack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/Main.java" afterPath="$PROJECT_DIR$/src/algos/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" afterPath="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" afterPath="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" afterPath="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms-collections-java.iml" afterPath="$PROJECT_DIR$/algorithms-collections-java.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algorithms-collections-java.iws" />
@@ -35,10 +37,16 @@
       <file leaf-file-name="Sorter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/sortings/Sorter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="450">
+            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="435">
               <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#269#270#0" expanded="false" />
+                <element signature="e#313#314#0" expanded="false" />
+                <element signature="e#442#443#0" expanded="false" />
+                <element signature="e#497#498#0" expanded="false" />
+                <element signature="e#563#564#0" expanded="false" />
+                <element signature="e#596#597#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -47,8 +55,8 @@
       <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/data_structures/lists/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1635">
-              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1725">
+              <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -57,21 +65,71 @@
       <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="1320">
-              <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1380">
+              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="90" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/algos/Main.java">
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.458891" vertical-offset="0" max-vertical-offset="525">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="812" max-vertical-offset="1350">
+              <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueueTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algos/tests/QueueTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8030593" vertical-offset="495" max-vertical-offset="1035">
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#991#992#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1186#1187#0" expanded="true" />
+                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="e#1305#1306#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#1494#1495#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickFinder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/algos/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="525">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,31 +137,13 @@
       <file leaf-file-name="MergeSorter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/sortings/MergeSorter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1065">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1065">
               <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuickSorter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algos/sortings/QuickSorter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="690">
-              <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1382#1383#0" expanded="false" />
+                <element signature="e#1436#1437#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algos/utils/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="300">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -118,24 +158,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectionSorter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algos/sortings/SelectionSorter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
-              <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InsertionSorter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algos/sortings/InsertionSorter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="525">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#228#229#0" expanded="false" />
+                <element signature="e#251#252#0" expanded="false" />
+                <element signature="e#307#308#0" expanded="false" />
+                <element signature="e#340#341#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/algos/utils/MappingFunc.java" />
         <option value="$PROJECT_DIR$/src/algos/utils/Mapper.java" />
         <option value="$PROJECT_DIR$/src/algos/dynamic_connectivity/UnionFinder.java" />
-        <option value="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" />
         <option value="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickUniter.java" />
         <option value="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickUnion.java" />
         <option value="$PROJECT_DIR$/src/algos/utils/Pair.java" />
@@ -171,9 +204,12 @@
         <option value="$PROJECT_DIR$/src/algos/data_structures/List.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/list/List.java" />
         <option value="$PROJECT_DIR$/src/algos/data_structures/lists/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" />
-        <option value="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
         <option value="$PROJECT_DIR$/src/algos/Main.java" />
+        <option value="$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java" />
+        <option value="$PROJECT_DIR$/src/algos/data_structures/lists/List.java" />
+        <option value="$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java" />
+        <option value="$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java" />
+        <option value="$PROJECT_DIR$/src/algos/tests/QueueTest.java" />
       </list>
     </option>
   </component>
@@ -233,7 +269,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,6 +324,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-collections-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-collections-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,6 +485,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="queues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-collections-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-collections-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lists" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -435,6 +518,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,14 +541,15 @@
     <property name="options.lastSelected" value="Errors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/Main.java&#10;ma&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/Main.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/tests/QueueTest.java&#10;sta&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/data_structures/stacks/Stack.java&#10;stack&#9;PSI&#9;JAVA://algos.data_structures.stacks.Stack&#10;ma&#9;FILE&#9;file://D:/IdeaProjects/algorithms-collections-java/src/algos/Main.java" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\algorithms-collections-java\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.Unit Tests">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -473,11 +558,11 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="algos.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -778,8 +863,32 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="Unit Tests" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="algorithms-collections-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="algos.tests" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit Tests" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -809,12 +918,14 @@
       <workItem from="1425534950908" duration="2686000" />
       <workItem from="1425638028814" duration="9916000" />
       <workItem from="1425655837676" duration="5843000" />
-      <workItem from="1425719709387" duration="2835000" />
+      <workItem from="1425719709387" duration="6069000" />
+      <workItem from="1425737246731" duration="6605000" />
+      <workItem from="1425789170412" duration="10968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54170000" />
+    <option name="totallyTimeSpent" value="74977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -876,31 +987,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/algos/sortings/Sorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="240">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="465">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/sortings/MergeSorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1095">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -950,7 +1045,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="615">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -959,7 +1060,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="240">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -968,9 +1075,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="465">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +1083,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1095">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,7 +1116,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="615">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,7 +1138,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="240">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1032,9 +1153,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="540">
           <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +1161,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1095">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,7 +1194,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="615">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,7 +1216,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="240">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1096,9 +1231,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="540">
           <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1239,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1095">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,7 +1266,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="240">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1138,9 +1281,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="465">
           <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,7 +1289,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,13 +1301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="749">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1205,23 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/sortings/InsertionSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/sortings/MergeSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1095">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,9 +1350,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="690">
           <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,9 +1358,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,7 +1367,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1263,28 +1386,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/sortings/MergeSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1095">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/sortings/InsertionSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="525">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/data_structures/lists/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1635">
-          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1725">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/dynamic_connectivity/QuickFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algos/data_structures/stacks/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="707" max-vertical-offset="1320">
-          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1380">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="90" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algos/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/algos/data_structures/queues/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.458891" vertical-offset="0" max-vertical-offset="525">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="812" max-vertical-offset="1350">
+          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algos/tests/QueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8030593" vertical-offset="495" max-vertical-offset="1035">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1305#1306#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
           </folding>
         </state>
       </provider>

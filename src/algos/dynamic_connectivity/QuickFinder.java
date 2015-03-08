@@ -1,7 +1,5 @@
 package algos.dynamic_connectivity;
 
-import algos.utils.Mapper;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

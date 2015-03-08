@@ -17,6 +17,12 @@ public class Stack<E> {
         this(head, null);
     } 
     
+    public Stack(E... elems) {
+        for (E elem : elems) {
+            push(elem);
+        }
+    }
+    
     public Stack() {}
     
     public Stack<E> push(E head) {
@@ -29,8 +35,6 @@ public class Stack<E> {
     }
     
     public E pop() {
-        if (isEmpty()) return null;
-        
         E head = getHead();
         if (hasTail()) {
             reset(getTail().getHead(), getTail().getTail());
@@ -54,7 +58,7 @@ public class Stack<E> {
         return 1 + getTail().getSize();
     }
     
-    private void setHead(E head) {
+    public void setHead(E head) {
         this.head = head;
     }
     

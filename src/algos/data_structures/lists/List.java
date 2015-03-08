@@ -15,6 +15,12 @@ public class List<T> {
         this(item, null);
     }
     
+    public List(T... elems) {
+        for (T elem : elems) {
+            insert(elem);
+        }
+    }
+    
     public List() {}
     
     public List<T> search(T item) {
@@ -63,7 +69,7 @@ public class List<T> {
         this.next = next;
     }
     
-    private void setItem(T item) {
+    public void setItem(T item) {
         this.item = item;
     }
     
