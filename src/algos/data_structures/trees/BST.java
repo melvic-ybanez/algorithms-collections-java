@@ -2,84 +2,117 @@ package algos.data_structures.trees;
 
 import java.util.Comparator;
 import java.util.Objects;
+import java.util.function.BiFunction;
 
 /**
  * Created by ybamelcash on 3/8/2015.
  */
-public class BST<E extends Comparable<E>> {
-    private E item;
-    private BST<E> left;
-    private BST<E> right;
-    private Comparator<E> comparator;
+public class BST<A extends Comparable<A>> {
+    private A item;
+    private BST<A> left;
+    private BST<A> right;
+    private Comparator<A> comparator;
     
-    public BST(E item, BST<E> left, BST<E> right, Comparator<E> comparator) {
+    public BST(A item, BST<A> left, BST<A> right, Comparator<A> comparator) {
         reset(item, left, right);
         this.comparator = comparator;
     }
     
-    public BST(E item, BST<E> left, BST<E> right) {
-        this(item, left, right, new Comparator<E>() {
-            @Override
-            public int compare(E o1, E o2) {
-                return o1.compareTo(o2);
-            }
-        });
+    public BST(A item, BST<A> left, BST<A> right) {
+        this(item, left, right, (o1, o2) -> o1.compareTo(o2));
     }
     
-    public BST(E item) {
-        this(item, null, null);
+    public BST(A item) {
+        this(item, BST.empty(), BST.empty());
     }
     
     public BST() {}
     
-    public BST<E> search(E item) {
-        if (isEmpty()) return null;
-        int comparison = compare(item, getItem());
-        if (comparison == 0) return this;
-        if (comparison < 0) return hasLeft()? getLeft().search(item) : null;
-        if (comparison > 0) return hasRight()? getRight().search(item) : null;
+    public static <E extends Comparable<E>> BST<E> empty() {
+        return new BST<>();
     }
     
-    private int compare(E item1, E item2) {
+    public BST<A> search(A item) {
+        if (isEmpty()) return BST.empty();
+        int comparison = compare(item, getItem());
+        if (comparison < 0) return hasLeft()? getLeft().search(item) : BST.empty();
+        if (comparison > 0) return hasRight()? getRight().search(item) : BST.empty();
+        return this;
+    }
+    
+    public BST<A> findMinimum() {
+        if (hasLeft()) return getLeft().findMinimum();
+        return this;
+    }
+    
+    public BST<A> findMaximum() {
+        if (hasRight()) return getRight().findMaximum();
+        return this;
+    }
+    
+    public <B> B inOrder(B acc, BiFunction<A, B, B> f) {
+        if (isEmpty()) return acc;
+        B leftResult = hasLeft()? getLeft().inOrder(acc, f) : acc;
+        B newAcc = f.apply(getItem(), leftResult);
+        B rightResult = hasRight()? getRight().inOrder(newAcc, f) : newAcc;
+        return rightResult;
+    }
+    
+    public <B> B preOrder(B acc, BiFunction<A, B, B> f) {
+        if (isEmpty()) return acc;
+        B newAcc = f.apply(getItem(), acc);
+        B leftResult = hasLeft()? getLeft().preOrder(newAcc, f) : newAcc;
+        B rightResult = hasRight()? getRight().preOrder(leftResult, f) : leftResult;
+        return rightResult;
+    }
+    
+    public <B> B postOrder(B acc, BiFunction<A, B, B> f) {
+        if (isEmpty()) return acc;
+        B leftResult = hasLeft()? getLeft().postOrder(acc, f) : acc;
+        B rightResult = hasRight()? getRight().postOrder(leftResult, f) : leftResult;
+        return f.apply(getItem(), rightResult);
+    }
+    
+    private int compare(A item1, A item2) {
         return Objects.compare(item1, item2, comparator);
     }
     
-    private void reset(E item, BST<E> left, BST<E> right) {
+    private void reset(A item, BST<A> left, BST<A> right) {
         setItem(item);
         setLeft(left);
         setRight(right);
     }
     
-    public void setItem(E item) {
+    public void setItem(A item) {
         this.item = item;
     }
     
-    public void setLeft(BST<E> left) {
+    public void setLeft(BST<A> left) {
         this.left = left;
     }
     
-    public void setRight(BST<E> right) {
+    public void setRight(BST<A> right) {
         this.right = right;
     }
     
-    public E getItem() {
+    public A getItem() {
         return item;
     }
     
-    public BST<E> getLeft() {
-        return left;
+    public BST<A> getLeft() {
+        return right;
     }
-    
-    public BST<E> getRight() {
+
+    public BST<A> getRight() {
         return right;
     }
     
     public boolean hasLeft() {
-        return getLeft() != null;
+        return getLeft() != null && !getLeft().isEmpty();
     }
     
     public boolean hasRight() {
-        return getRight() != null;
+        return getRight() != null && !getRight().isEmpty();
     }
     
     public boolean isLeaf() {
@@ -87,6 +120,6 @@ public class BST<E extends Comparable<E>> {
     }
     
     public boolean isEmpty() {
-        return getItem() == null && !hasLeft() && !hasRight();
+        return getItem() == null && getLeft() == null && getRight() == null;
     }
 }
